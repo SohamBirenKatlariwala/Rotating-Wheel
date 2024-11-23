@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.wheel-container {
+    width: 150px;
+    height: 150px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #3498db;
+    border-top: 5px solid #e74c3c;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.wheel-container:hover .wheel {
+    transform: rotate(360deg);
+}
